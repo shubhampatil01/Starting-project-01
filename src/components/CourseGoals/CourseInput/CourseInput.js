@@ -29,15 +29,16 @@ const CourseInput = (props) => {
         <label style={{ color: !isValid ? "red" : "black" }}>Course Goal</label>
         <input
           style={{
-            borderColor: !isValid ? "red" : "#ccc",
+            borderColor: !isValid ? "red" : "black",
             background: !isValid ? "salmon" : "transparent",
           }}
+          placeholder={!isValid ? "Enter valid text" : "Enter text"}
           type="text"
           onChange={goalInputChangeHandler}
         />
       </div>
       <Button
-        style={{ background: !isValid ? "blur" : "transparent" }}
+        style={{ background: !isValid ? "#f4f4f4" : "#8b005d" }}
         type="submit"
       >
         Add Goal
